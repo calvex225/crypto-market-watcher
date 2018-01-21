@@ -2,10 +2,25 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' media="screen"/>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,500,700" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <section class="welcome">
+      <div class="overlay">
+        <div class="login">
+          <h1>CMW Sign-in</h1>
+          <form action="/dasboard" method="POST">
+            <input type="mail" name="email" placeholder="example@mail.com"><br>
+            <input type="password" name="password" placeholder="password"><br>
+            <button type="submit">login</button>
+          </form>
+        </div>
+        <footer class="welcome-footer">
+          <p>Make with <i class="em em-heart"></i> by calvex225.</p>
+        </footer>
+      </div>
+    </section>
   </body>
 </html>

@@ -1,4 +1,48 @@
 body {
-    background: #aa2828;
+    background: #F7F7F0;
+    color: #191919;
+    font-family: 'Catamaran', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.welcome {
+    background: url(../images/bg.jpg) no-repeat center fixed; 
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    background: linear-gradient(to right bottom, #5EB6DD, #234CA5);
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.login {
+    width: 300px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 110px;
     color: #fff;
+}
+
+.login h1 {
+    font-size: 50px;
+    font-weight: 700 bold;
+}
+
+.login p{
+    font-size: 22px;
+    font-weight: 500 medium;
+}
+
+.welcome-footer {
+    padding: 20px 0px 10px 0px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.3em;
 }

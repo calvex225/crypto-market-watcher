@@ -4,6 +4,7 @@ import Debug from 'debug';
 import express from 'express';
 import logger from 'morgan';
 import path from 'path';
+
 // import favicon from 'serve-favicon';
 
 import index from './routes/index';
@@ -50,5 +51,9 @@ process.on('uncaughtException', (err) => {
   debug('Caught exception: %j', err);
   process.exit(1);
 });
+
+//passport
+app.use(passport.initialize());
+app.use(passport.session());
 
 export default app;
