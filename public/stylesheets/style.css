@@ -46,3 +46,35 @@ body {
     color: #fff;
     font-size: 1.3em;
 }
+
+input {
+    width: 250px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid #fff ;
+    color: #fff !important;
+    padding: 5px 5px 5px 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+button {
+    height: 40px;
+    width: 280px;
+    background: #fff;
+    padding: 5px 5px 5px 10px;
+    font-size: 20px;
+    border: 2px solid #fff ;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #FFD940;
+    padding: 5px 5px 5px 10px;
+    font-size: 20px;
+    color: #234CA5;
+    border: 2px solid #FFD940 ;
+    border-radius: 8px;
+}

@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
     <link rel='stylesheet' href='/stylesheets/style.css' media="screen"/>
     <link href="https://fonts.googleapis.com/css?family=Catamaran:400,500,700" rel="stylesheet">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+    <title><%= title %></title>
   </head>
   <body>
     <section class="welcome">
@@ -12,9 +16,9 @@
         <div class="login">
           <h1>CMW Sign-in</h1>
           <form action="/dasboard" method="POST">
-            <input type="mail" name="email" placeholder="example@mail.com"><br>
-            <input type="password" name="password" placeholder="password"><br>
-            <button type="submit">login</button>
+            <input class="inputmail" type="mail" name="email" placeholder="example@mail.com"><br>
+            <input class="inputpass" type="password" name="password" placeholder="password"><br>
+            <button class="buttonmit" type="submit">login</button>
           </form>
         </div>
         <footer class="welcome-footer">
