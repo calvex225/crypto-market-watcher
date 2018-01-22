@@ -11,13 +11,9 @@ router.get('/', (req, res) => {
 
 /* GET dashboard page */
 router.get('/dashboard', (req, res) => {
-  if((username === "alex.gbetie@meltwater.org") && (password === "crypto")){
-    res.render('dashboard', {
-      title: 'Crypto Market Watcher'
-    });
-  }else{
-    return "The username or the password are not correct";
-  }
+  res.render('dashboard', {
+    title: 'Crypto Market Watcher'
+  });
 });
 
 export default router;
