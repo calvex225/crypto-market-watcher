@@ -4,13 +4,10 @@ import Debug from 'debug';
 import express from 'express';
 import logger from 'morgan';
 import path from 'path';
-import session from 'express-session';
-import LocalStrategy from 'express-local';
 
 // import favicon from 'serve-favicon';
 
 import index from './routes/index';
-import dashboard from './routes/index';
 
 const app = express();
 const debug = Debug('crypto-martket-watcher:app');
@@ -56,40 +53,5 @@ process.on('uncaughtException', (err) => {
 });
 
 //Login with passport
-app.post('/',
-  passport.authenticate('local', { successRedirect: '/dashboard',
-                                  failureRedirect: '/',
-                                  failureFlash: 'Invalid Username or Password.',
-                                  successFlash: 'Congratulation, you are logged'
-                                })
-  function(req, res) {
-    // If this function gets called, authentication was successful.
-    // `req.user` contains the authenticated user.
-    res.redirect('/dashboard' + req.user.username);
-  });
-
-  passport.use(new LocalStrategy({
-    usernameField: 'email',
-    passwordField: 'password'
-  },
-
-    function(username, password, done) {
-      User.findOne({ username: "alex.gbetie@meltwater.org" }, function (err, user) {
-        if (err) { return done(err); }
-        if (!user) {
-          return done(null, false, { message: 'Incorrect username.' });
-        }
-        if (!user.validPassword("crypto")) {
-          return done(null, false, { message: 'Incorrect password.' });
-        }
-        return done(null, user);
-      });
-    }
-  ));
-
-app.use(session({ secret: "cats" }));
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(passport.initialize());
-app.use(passport.session());
 
 export default app;

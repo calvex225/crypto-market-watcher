@@ -9,9 +9,9 @@ router.get('/', (req, res) => {
   });
 });
 
-/* GET dashboard page. */
-router.get('/dasboard', (req, res) => {
-  res.render('dasboard', {
+/* GET dashboard page */
+router.get('/dashboard', (req, res) => {
+  res.render('dashboard', {
     title: 'Crypto Market Watcher'
   });
 });
