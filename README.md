@@ -6,7 +6,7 @@ The base was generated using Yo's [generator-express-es6](https://www.npmjs.com/
 
 ## Running the Application
 
-![Preview Crypto Watcher](https://github.com/calvex225/crypto-market-watcher/crypto_watcher.png "Dashboard Crypto Market Watcher")
+![Preview Crypto Watcher](crypto_watcher.png "Dashboard Crypto Market Watcher")
 
 ## Running the Application
 
