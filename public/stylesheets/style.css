@@ -97,7 +97,11 @@ body {
     text-align: right;
     padding: 0 50px 0 50px; 
     position: relative;
-    right: -200px;
+    right: -180px;
+}
+
+span .ligth-blue {
+    text-decoration: none;
 }
 
 .login {
@@ -146,8 +150,8 @@ body {
     padding: 5px 25px 5px 5px;
 }
 
-.bid-price h1{
-    font-size: 22px;
+.bid-price h1 span .blue{
+    font-size: 28px;
     font-weight: 700 bold;
 }
 
@@ -157,8 +161,8 @@ body {
     padding: 5px 25px 5px 25px;
 }
 
-.ask-price h1{
-    font-size: 22px;
+.ask-price h1 span .yellow{
+    font-size: 28px;
     font-weight: 700 bold;
 }
 
@@ -167,8 +171,8 @@ body {
     padding: 5px 5px 5px 25px;
 }
 
-.last-price h1{
-    font-size: 22px;
+.last-price h1 span .red{
+    font-size: 28px;
     font-weight: 700 bold;
 }
 

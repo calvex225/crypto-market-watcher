@@ -9,11 +9,21 @@ router.get('/', (req, res) => {
   });
 });
 
+/* Be Logged */
+
 /* GET dashboard page */
 router.get('/dashboard', (req, res) => {
+
   res.render('dashboard', {
     title: 'Crypto Market Watcher'
   });
 });
+
+/* logout */
+router.get('/logout', (req, res) => {
+  req.logout();
+  res.redirect('/');
+});
+
 
 export default router;
