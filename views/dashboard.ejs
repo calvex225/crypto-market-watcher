@@ -9,20 +9,38 @@
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
     <title>Dashboard - <%= title %></title>
+
+    <script type="text/javascript" src="websocket.js"></script>
+    <script type="text/javascript" src="MD5.js"></script>    
+
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
+      <div class="logo">
         <h1>Crypto Market Watcher Dashboard</h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="/dashboard" alt="home">Home</a></li>
+          <li><a href="#/alarm" alt="alarm">Alarm</a></li>
+          <li><a href="/" alt="log out">Log Out</a></li>
+        </ul>
+      </div>
+      <div class="notif">
+        Hello <span class="ligth-blue">Alex</span>
+      </div>
     </nav>
     <section class="container">
-        <div class="login">
-          
-          
-        </div>
-        <footer class="dash-footer">
+      <div class="headbanner">
+      </div>
+      <div class="dashb-content">
+        <div id="status"></div>
+        <div id="output"></div>
+        
+      </div>
+        <footer class="dashb-footer">
           <p>Make with <i class="em em-heart"></i> by calvex225.</p>
         </footer>
     </section>
-    <script src="../public/websocket.js"></script>
   </body>
 </html>
