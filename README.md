@@ -4,7 +4,7 @@ A nodejs application to watch Cryptocurrency exchanges for the price of BTC/USD 
 
 The base was generated using Yo's [generator-express-es6](https://www.npmjs.com/package/generator-express-es6).
 
-## Running the Application
+## Preview
 
 ![Preview Crypto Watcher](crypto_watcher.png "Dashboard Crypto Market Watcher")
 
