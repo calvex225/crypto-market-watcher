@@ -17,6 +17,9 @@ body {
 .ligth-blue {
     color: #5EB6DD;
 }
+.red {
+    color: #DB2218;
+}
 
 .welcome {
     background: url(../images/bg.jpg) no-repeat center fixed; 
@@ -118,11 +121,13 @@ body {
 }
 
 .dashb-content {
-    width: 600px;
-    height: 250px;
+    width: auto;
+    height: 100%;
+    left: 17%;
+    right: 17%;
     margin-left: auto;
     margin-right: auto;
-    padding: 50px 50px 0 50px;
+    padding: 50px 50px 50px 50px;
     color: #191919;
     top: -50px;
     position: relative;
@@ -131,6 +136,40 @@ body {
     background: #fff;
     border-radius: 20px;
     box-shadow: 1px 1px 8px #9b9b9b;
+    display: inline-block;
+    text-align: center;
+}
+
+.bid-price {
+    display: inline-block;
+    border-right: 1px #191919 dotted;
+    padding: 5px 25px 5px 5px;
+}
+
+.bid-price h1{
+    font-size: 22px;
+    font-weight: 700 bold;
+}
+
+.ask-price {
+    display: inline-block;
+    border-right: 1px #191919 dotted;
+    padding: 5px 25px 5px 25px;
+}
+
+.ask-price h1{
+    font-size: 22px;
+    font-weight: 700 bold;
+}
+
+.last-price {
+    display: inline-block;
+    padding: 5px 5px 5px 25px;
+}
+
+.last-price h1{
+    font-size: 22px;
+    font-weight: 700 bold;
 }
 
 .welcome-footer {
