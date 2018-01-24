@@ -1,7 +1,18 @@
-const w = new WebSocket("wss://real.okcoin.com:10440/websocket")
-
-w.onmessage = (msg) => console.log(JSON.parse(msg.data)[0].data.last)
-
-let msg = JSON.stringify({'event':'addChannel','channel':'ok_sub_spot_btc_usd_ticker'})
-
-w.onopen = () => w.send(msg)
+var ws = new WebSocket("wss://api.bitfinex.com/ws");
+    ws.onopen = function() {
+        ws.send(JSON.stringify({
+            "event": "subscribe",
+            "channel": "ticker",
+            "pair": "BTCUSD"
+        }));
+    };
+    ws.onmessage = function(msg) {
+        var response = JSON.parse(msg.data);
+        console.log(response);
+        var hb = response[1];
+        if (hb != "hb") {
+            document.getElementById("ask").textContent = response[3];
+            document.getElementById("last").textContent = response[7];
+            document.getElementById("bid").textContent = response[1];
+        }
+    };
