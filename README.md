@@ -6,6 +6,10 @@ The base was generated using Yo's [generator-express-es6](https://www.npmjs.com/
 
 ## Running the Application
 
+![Preview Crypto Watcher](https://github.com/calvex225/crypto-market-watcher/crypto_watcher.png "Dashboard Crypto Market Watcher")
+
+## Running the Application
+
 After forking this repository, clone your version and run the following commands to start using the application. 
 
 Review the work done for you and implement your changes.
